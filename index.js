@@ -1,3 +1,29 @@
 module.exports = {
-  presets: [ 'es2015', 'stage-0' ]
+  plugins: ['lodash'],
+  env: {
+    browser: {
+      presets: [
+        [
+          'env',
+          {
+            targets: {
+              browsers: 'last 2 versions'
+            }
+          }
+        ]
+      ]
+    },
+    node: {
+      presets: [
+        [
+          'env',
+          {
+            targets: {
+              node: 'current'
+            }
+          }
+        ]
+      ]
+    }
+  }
 };
