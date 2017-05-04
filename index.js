@@ -1,3 +1,4 @@
 module.exports = {
-  presets: [ 'es2015', 'stage-0', 'env' ]
+  presets: [ 'es2015', 'stage-0', 'env' ],
+  plugins: [ 'lodash' ]
 };
